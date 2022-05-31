@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+.chicken-box {
+    border: 2px solid black;
+    font-size: 18px;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+    margin-top: 0;
+    background-color: rgb(238, 176, 187);
+}
+
+.beef-box {
+    border: 2px solid black;
+    font-size: 18px;
+    color: #fff;
+    width: 30%;
+    text-align: center;
+    float: right;
+    margin-top: 0;
+    font-weight: bold;
+    background-color: rgb(207, 18, 18);
+}
+
+.sushi-box {
+    border: 2px solid black;
+    font-size: 18px;
+    width: 30%;
+    text-align: center;
+    float: right;
+    margin-top: 0;
+    font-weight: bold;
+    background-color: rgb(207, 203, 140);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.chicken {
+    border: 2px solid black;
+    width: 32%;
+    height: auto;
+    background-color: rgb(153, 152, 152);
+}
+
+.beef {
+    border: 2px solid black;
+    width: 32%;
+    height: auto;
+    background-color: rgb(153, 152, 152);
+}
+
+.sushi {
+    border: 2px solid black;
+    width: 32%;
+    height: auto;
+    background-color: rgb(153, 152, 152);
+}
+
+#responsive {
+    padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #responsive {
+        display: inline-block;
+        margin: 30px; 
+    }
+
+    .sushi {
+        display: inline-block;
+        width: 98.5%;
+        height: 150px;
+    }
+
+    html { 
+        font-size: calc( 7px + (24 - 16) * (100vw - 400px) / (800 - 400) ); 
+    }
+    
+    .chicken, .beef {
+        display: inline-block;
+        width: 49%;
+        margin-bottom: 20px;
+    } 
+
+    .title {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    #responsive {
+        display: inline-block;
+    }
+
+    .chicken, .beef, .sushi {
+        display: block;
+        margin: auto;
+        width: 70%;
+        margin-bottom: 20px;
+    } 
+
+    .title {
+       padding-bottom: 10px; 
+    }
+
+}
